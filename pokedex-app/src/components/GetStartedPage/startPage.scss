@@ -1,0 +1,42 @@
+.start_wrapper {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-image: url(../../assets/images/2.jpg);
+  background-size: cover;
+  background-position: center;
+  .start_btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: $backgroundColorBtn;
+    transform: scale(1.5);
+    border-radius: 50%;
+    transition: transform .5s ease;
+  }
+  .start_btn:hover::before,
+  .start_btn:focus::before {
+    transform: scale(0);
+  }
+  .start_btn {
+    margin-top: 10%;
+    z-index: 1;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+    background-color: $hoverColorBtn;
+    color: $hoverColorBtn;
+    font-family: 'CrimsonText-Bold';
+    box-shadow: -11px 10px 2px -1px rgba(0,0,0,0.75);
+    font-size: 20px;
+    font-weight: 900;
+  }
+  .start_btn:hover,
+  .start_btn:focus {
+    color: $backgroundColorBtn;
+    box-shadow: -11px 10px 2px -3px rgba(0,0,0,0.75);
+
+  }
+}

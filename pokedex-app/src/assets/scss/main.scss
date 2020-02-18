@@ -1,0 +1,9 @@
+@import './utils/vars.scss';
+@import './detalis/button.scss';
+@import '../../components/GetStartedPage/startPage.scss';
+
+.App {
+  min-width: 100vw;
+  min-height: 100vh;
+  text-align: center;
+}

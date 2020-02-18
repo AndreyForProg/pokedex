@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Akronim;";
+  src: url('../../fonts/Akronim-Regular.eot');
+  src: url('../../fonts/Akronim-Regular.woff') format('woff'),
+  url('../../fonts/Akronim-Regular.otf') format('otf'),
+  url('../../fonts/Akronim-Regular.ttf')  format('truetype'),
+  url('../../fonts/Akronim-Regular.svg')  format('svg')
+}
+
+@font-face{
+  font-family: 'CrimsonText-Bold';
+  src: url('../../fonts/CrimsonText-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'nowmedium';
+  src: url('../fonts/nowmedium/nowmedium.eot'),
+      url('../fonts/nowmedium/nowmedium.woff') format('woff'),
+      url('../fonts/nowmedium/nowmedium.ttf') format('truetype'),
+      url('../fonts/nowmedium/nowmedium.otf') format('OpenType');
+  font-weight: normal;
+  font-style: normal;
+}
