@@ -1,0 +1,33 @@
+.about-page {
+  min-width: 98.9vw;
+  min-height: 100vh;
+  background-image: url(../../assets/images/4.jpg);
+  background-position: center;
+  font-family: $mainFont;
+  &_wrapper {
+    @include wrapper(90%, 1200px, rgba(126, 146, 167, .8));
+    display: flex;
+    justify-content: center;
+  }
+  &_btn-back {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+  }
+  &_photos {
+    display: block;
+    padding: 5px;
+    border: 1px solid grey;
+  }
+  &_mainPhoto {
+    @include size(250px);
+  }
+  &_diferentPhotos {
+    display: flex;
+    justify-content: space-between;
+    img {
+      @include size(40px);
+      cursor: pointer;
+    }
+  }
+}

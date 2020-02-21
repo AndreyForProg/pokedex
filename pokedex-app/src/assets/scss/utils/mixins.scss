@@ -1,0 +1,21 @@
+@mixin size($width,$height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin fontOptions($size, $wieght) {
+  font-size: $size;
+  font-weight: $wieght;
+}
+
+@mixin wrapper($width, $max-width, $bacgroundColor) {
+  width: $width;
+  max-width: $max-width;
+  background-color: $bacgroundColor;
+  min-height: 100vh;
+  margin: 0 auto;
+  border: rgb(50, 53, 56) solid 1px;
+  border-radius: 10px;
+  padding: 2% 1%;
+  position: relative;
+}

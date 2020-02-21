@@ -1,25 +1,21 @@
-@font-face {
-  font-family: "Akronim;";
-  src: url('../../fonts/Akronim-Regular.eot');
-  src: url('../../fonts/Akronim-Regular.woff') format('woff'),
-  url('../../fonts/Akronim-Regular.otf') format('otf'),
-  url('../../fonts/Akronim-Regular.ttf')  format('truetype'),
-  url('../../fonts/Akronim-Regular.svg')  format('svg')
-}
-
 @font-face{
   font-family: 'CrimsonText-Bold';
-  src: url('../../fonts/CrimsonText-Bold.ttf');
+  src: url('../../fonts/CrimsonText-Bold/CrimsonText-Bold.eot'),
+  url('../../fonts/CrimsonText-Bold/CrimsonText-Bold.woff') format('woff'),
+      url('../../fonts/CrimsonText-Bold/CrimsonText-Bold.ttf') format('truetype'),
+      url('../../fonts/CrimsonText-Bold/CrimsonText-Bold.otf') format('OpenType'),
+      url('../../fonts/CrimsonText-Bold/CrimsonText-Bold.svg') format('svg');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face{
-  font-family: 'nowmedium';
-  src: url('../fonts/nowmedium/nowmedium.eot'),
-      url('../fonts/nowmedium/nowmedium.woff') format('woff'),
-      url('../fonts/nowmedium/nowmedium.ttf') format('truetype'),
-      url('../fonts/nowmedium/nowmedium.otf') format('OpenType');
+  font-family: 'CrimsonText-Regular';
+  src: url('../../fonts/CrimsonText-Regular/CrimsonText-Regular.eot'),
+  url('../../fonts/CrimsonText-Regular/CrimsonText-Regular.woff') format('woff'),
+      url('../../fonts/CrimsonText-Regular/CrimsonText-Regular.ttf') format('truetype'),
+      url('../../fonts/CrimsonText-Regular/CrimsonText-Regular.otf') format('OpenType'),
+      url('../../fonts/CrimsonText-Regular/CrimsonText-Regular.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }

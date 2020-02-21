@@ -28,15 +28,11 @@
     transition: all .3s ease-in-out;
     background-color: $hoverColorBtn;
     color: $hoverColorBtn;
-    font-family: 'CrimsonText-Bold';
-    box-shadow: -11px 10px 2px -1px rgba(0,0,0,0.75);
     font-size: 20px;
     font-weight: 900;
   }
   .start_btn:hover,
   .start_btn:focus {
     color: $backgroundColorBtn;
-    box-shadow: -11px 10px 2px -3px rgba(0,0,0,0.75);
-
   }
 }

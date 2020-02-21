@@ -1,9 +1,12 @@
 @import './utils/vars.scss';
+@import './utils/mixins.scss';
 @import './detalis/button.scss';
 @import '../../components/GetStartedPage/startPage.scss';
+@import '../../components/MainContent/mainContet.scss';
+@import '../../components/AboutPage/about.scss';
 
 .App {
-  min-width: 100vw;
+  min-width: 98.9vw;
   min-height: 100vh;
   text-align: center;
 }
