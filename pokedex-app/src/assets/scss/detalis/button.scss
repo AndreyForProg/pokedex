@@ -1,19 +1,32 @@
 .btn {
   background-color: $backgroundColorBtn;
-  color: #222;
-  padding: .4em 1em .1em;
+  color: $hoverColorBtn;
+  padding: .5em 1em .1em;
   border: none;
   outline: none;
   position: relative;
   cursor: pointer;
+  @include fontOptions(14px, 900);
   font-family: 'CrimsonText-Bold';
-  @include fontOptions(16px, 900);
-  color: $hoverColorBtn;
-  box-shadow: -11px 10px 2px -1px rgba(0,0,0,0.75);
-  transition: all .4 ease-in-out;
-  &:hover,
-  :focus {
-    box-shadow: -11px 10px 2px -3px rgba(0,0,0,0.75);
-    transform: scale(.95);
-  }
+
+  --border_size: 2px;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border: var(--border_size) solid $backgroundColorBtn;
+  transition: top, left, right, bottom, 200ms ease-in-out;
+}
+.btn:hover::before,
+.btn:focus::before  {
+  top: calc(var(--border_size) * -2);
+  left: calc(var(--border_size) * -2);
+  right: -4px;
+  bottom: calc(var(--border_size) * -2);
 }

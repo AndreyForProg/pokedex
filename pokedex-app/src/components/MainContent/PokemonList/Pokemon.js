@@ -5,10 +5,10 @@ import {Link} from 'react-router-dom'
 
 const Pokemon = (props) => {
   return (
-    <Link to='/aboutPage'>
+    <Link to={'/aboutPage/' + props.id}>
       <div className="pokemon">
-        <img src={pokemon} alt=""/>
-        <div><span>N1</span> some pokemon</div>
+        <img src={props.photo} alt=""/>
+        <div className='pokemonList_pokemonName'><span>{props.id}</span> {props.name}</div>
       </div>
     </Link>
     )

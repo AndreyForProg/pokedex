@@ -1,33 +1,96 @@
 .about-page {
   min-width: 98.9vw;
   min-height: 100vh;
-  background-image: url(../../assets/images/4.jpg);
+  background-image: url(../../assets/images/18.jpg);
   background-position: center;
   font-family: $mainFont;
   &_wrapper {
-    @include wrapper(90%, 1200px, rgba(126, 146, 167, .8));
+    @include wrapper(70%, 1200px, rgba(223, 225, 226, 0.8));
     display: flex;
     justify-content: center;
+    .about-page_descr {
+      width: 70%;
+      max-width: 400px;
+      text-align: left;
+      .about-page_title {
+        text-transform: uppercase;
+        color: $hoverColorBtn;
+      }
+      .statItem {
+        font-size: 14px;
+        color: rgb(12, 44, 26);
+        font-weight: 600;
+        span {
+          font-size: 15px;
+          font-weight: 600;
+          text-transform: capitalize;
+          color: rgb(44, 43, 43);
+        }
+        .baseStats {
+          display: flex;
+          align-items: center;
+          border-top: 1px solid rgb(163, 161, 161);
+          border-bottom: 1px solid rgb(163, 161, 161);
+          margin-bottom: 1%;
+          padding-left: 1%;
+          font-size: 14px;
+          font-weight: bold;
+          color: rgb(77, 77, 77);
+          .baseStatName {
+            width: 35%;
+            min-width: 110px;
+          }
+          .baseStatNumber {
+            width: 10%;
+          }
+          .baseStatIndicator {
+            border-radius: 25px;
+            height: 20px;
+          }
+        }
+      }
+    }
+    .pokemonTypes {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .pokemon_type {
+      width: 49%;
+      height: 50px;
+      padding-top: 15px;
+      text-align: center;
+      border-radius: 25px;
+      text-transform: uppercase;
+    }
   }
   &_btn-back {
     position: absolute;
-    top: 1%;
-    left: 1%;
+    top: 2%;
+    right: 2%;
+    .btn {
+      border: 1px solid $hoverColorBtn;
+      &:hover {
+        border: $backgroundColorBtn 1px solid;
+      }
+    }
   }
   &_photos {
-    display: block;
-    padding: 5px;
-    border: 1px solid grey;
-  }
-  &_mainPhoto {
-    @include size(250px);
-  }
-  &_diferentPhotos {
-    display: flex;
-    justify-content: space-between;
-    img {
-      @include size(40px);
-      cursor: pointer;
+    .about-page_mainPhoto {
+      @include size(200px);
     }
+  }
+}
+
+//for mobile
+@media (max-width:700px) {
+  .about-page_wrapper {
+    width: 95%;
+  }
+}
+
+@media (max-width:390px) {
+  .about-page_wrapper {
+    width: 100%;
+    display: block;
   }
 }

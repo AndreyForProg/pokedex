@@ -1,12 +1,27 @@
 import * as axios from 'axios'
 
 const instance = axios.create({
-  withCredentials: true,
   baseURL: 'https://pokeapi.co/api/v2/'
 })
 
 export const API ={
-  getAllPokemons( activePage=0, countOnPage=70 ) {
-    return instance.get(`pokemon/?limit=${activePage}&offset=${countOnPage}`)
+  getAllPokemons( activePage, countOnPage ) {
+    return instance.get(`pokemon/?limit=${countOnPage}&offset=${activePage}`)
+    .then(response => response.data)
+  },
+
+  getPhoto(name) {
+    return instance.get(`pokemon/${name}/`)
+    .then(response => response.data)
+  },
+
+  getAboutPokemon(id) {
+    return instance.get(`pokemon/${id}`)
+    .then(response => response.data)
+  },
+
+  getEggGroupPokemon(id) {
+    return instance.get(`egg-group/${id}`)
+    .then(response => response.data.pokemon_species)
   }
 }
